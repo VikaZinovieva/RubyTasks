@@ -5,7 +5,6 @@ class Business
   def initialize(name, surname)
     @name = name
     @surname = surname
-    #@@workers_by_business << { name: name, surname: surname, experience: experience}
   end
 
   def self.amount_of_workers
