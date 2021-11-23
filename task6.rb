@@ -1,6 +1,3 @@
-require 'pry'
-
-
 class Business
 
   @@workers_by_business = []
@@ -59,10 +56,3 @@ end
    end
 
    end
-
-
-test1 = WorkerAccountant.new('Ivan','Ivanov', 2)
-test2 = WorkerLawyer.new('Petro','Pavlov', 5)
-
-
-p WorkerAccountant::FIX_SALARY
