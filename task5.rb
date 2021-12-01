@@ -1,5 +1,4 @@
 class FileAnalyzer
-
   def statistics(file_name)
     file = File.open(file_name)
     lines = file.readlines
@@ -55,8 +54,7 @@ class FileAnalyzer
       puts e.message
     end
   end
-
-  end
+end
 
 
 
