@@ -1,5 +1,4 @@
 class Business
-
   @@workers_by_business = []
 
   def initialize(name, surname)
@@ -36,14 +35,14 @@ class WorkerAccountant < Business
     @@workers_by_business << { name: name, surname: surname, specialization: 'Accountant', salary: @experience * FIX_SALARY }
   end
 
-def get_salary
-  return @experience * FIX_SALARY
-end
-
+  def get_salary
+   return @experience * FIX_SALARY
+  end
 end
 
  class WorkerLawyer < Business
    FIX_SALARY = 3000
+   
    def initialize(name, surname, experience)
      super(name, surname)
      @experience = experience
@@ -53,5 +52,4 @@ end
    def get_salary
      return @experience * FIX_SALARY
    end
-
-   end
+ end
